@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elm SCSS starter</title>
+
+    <link
+      rel="stylesheet"
+      href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" /
+  </head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <body>
+    <main id="app"></main>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          "Space+Mono",
+          "Roboto:300,300italic,700,700italic",
+          "Material+Icons"
+        ]
+      }
+    });
+  </script>
+  <script src="./js/elm.compiled.js"></script>
+  <script>
+    Elm.Main.init({ node: document.getElementById("app") });
+  </script>
+</html>
